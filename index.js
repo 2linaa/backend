@@ -94,7 +94,7 @@ app.get('/', (req, res) => {
     res.send('API berjalan!');
 });
 
-Jalankan server
+// Jalankan server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
