@@ -79,8 +79,8 @@ app.get('/nutrition', async (req, res) => {
             food_id: foodDetail.food_id,
             food_name: foodDetail.food_name,
             food_description: foodDetail.food_description,
-            food_type: foodDetail.food_type,
-            food_url: foodDetail.food_url,
+            // food_type: foodDetail.food_type,
+            // food_url: foodDetail.food_url,
             servings: foodDetail.servings.serving || null,
         });
     } catch (error) {
@@ -95,7 +95,8 @@ app.get('/', (req, res) => {
 });
 
 // Jalankan server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => {
+//     console.log(`Server running on port ${PORT}`);
+// });
+
